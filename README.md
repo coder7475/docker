@@ -33,6 +33,12 @@ Docker provides tooling and a platform to manage the lifecycle of your container
 
 - When you're ready, deploy your application into your production environment, as a container or an orchestrated service. This works the same whether your production environment is a local data center, a cloud provider, or a hybrid of the two.
 
+## Docker Use cases
+
+1. Fast, consistent delivery of your application
+2. Responsive deployment and scaling
+3. Running more workload on the same hardware
+
 ## References
 
 1. [official docs](https://docs.docker.com/get-started/docker-overview/#:~:text=The%20underlying%20technology,-Docker%20is%20written&text=Docker%20uses%20a%20technology%20called,provide%20a%20layer%20of%20isolation.)
