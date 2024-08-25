@@ -51,13 +51,17 @@ Docker provides tooling and a platform to manage the lifecycle of your container
 
 ### Docker Client
 
-- simply `docker` sends docker commands to `dockerd` the docker container manager which carries them out.
+- simply `docker` sends docker commands to `dockerd` the docker daemon which carries them out.
 
 - `docker` uses docker API
 
 - can communicate with more that one daemon
 
 ## Docker Desktop
+
+- An application that enables to build and share containerized application and microservices.
+
+- Includes the Docker daemon (`docker), the Docker client (`docker`), Docker Compose, Docker Content trust, Kubernetes and Credential Helps.
 
 ## References
 
