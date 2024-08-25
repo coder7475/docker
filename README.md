@@ -88,8 +88,38 @@ Docker provides tooling and a platform to manage the lifecycle of your container
   - when changing Dockerfile and rebuilding an image, only those layers which have changed are rebuilt
   - This is why images are so lightweight, small and fast
 
+### Containers
+
+- A container is a runnable instance of an image.
+
+- We can create, start, stop, move or delete a container using Docker API or CLI.
+
+- Docker container can be connected to one or more networks, attack storage to it or even create a new image based on in its current state.
+
+- By default, containers are isolated from other containers and its host machine.
+
+- A container is defined by its image as well as any configuration options you provide to it when you create or start it. When a container is removed, any changes to its state that aren't stored in persistent storage disappear.
+
+## The Underlying Technology
+
+- Docker is written in Go
+
+- It takes advantage of several features of the Linux kernel to deliver its functionality.
+
+- Docker Engine is similar to LXC
+
+- The Linux Techonlogy it uses are
+
+  - **LXC**: Linux Containers (LXC) enables running multiple independent Linux systems on a single computer. Acting as isolated spaces, LXC containers share host resources like memory and processing power, without needing their own full operating system copy, ensuring lightweight and fast startup. Portable across compatible Linux systems, they find utility in diverse tasks such as running separate applications, testing software, or deploying cloud services. With user-friendly management tools available, LXC simplifies container creation, monitoring, and management.
+
+  - **Control Groups (cgroups)**: Control Groups (cgroups) is a Linux kernel feature that allows the allocation and management of resources like CPU, memory, and I/O to a set of processes. Docker leverages cgroups to limit the resources used by containers and ensure that one container does not monopolize the resources of the host system.
+
+  - **Union File Systems (UnionFS)**: UnionFS is a file system service that allows the overlaying of multiple file systems in a single, unified view. Docker uses UnionFS to create a layered approach for images and containers, which enables better sharing of common files and faster container creation.
+
+  - **Namespaces**: Namespaces are another Linux kernel feature that provides process isolation. They allow Docker to create isolated workspaces called containers. Namespaces ensure that processes within a container cannot interfere with processes outside the container or on the host system. There are several types of namespaces, like PID, NET, MNT, and USER, each responsible for isolating a different aspect of a process.
+
 ## References
 
-1. [official docs](https://docs.docker.com/get-started/docker-overview/#:~:text=The%20underlying%20technology,-Docker%20is%20written&text=Docker%20uses%20a%20technology%20called,provide%20a%20layer%20of%20isolation.)
+- [official docker doc](https://docs.docker.com/get-started/docker-overview/#:~:text=The%20underlying%20technology,-Docker%20is%20written&text=Docker%20uses%20a%20technology%20called,provide%20a%20layer%20of%20isolation.)
 
-2. [roadmap.sh](https://roadmap.sh/docker)
+- [docker roadmap](https://roadmap.sh/docker)
