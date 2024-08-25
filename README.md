@@ -39,6 +39,26 @@ Docker provides tooling and a platform to manage the lifecycle of your container
 2. Responsive deployment and scaling
 3. Running more workload on the same hardware
 
+## Docker Architecture
+
+- Client - Server Architecture
+- Docker Client - Docker Daemon
+
+### Docker daemon
+
+- Listen's for docker api requests and manages **docker objects**
+- Communicates with other daemon to manage docker services.
+
+### Docker Client
+
+- simply `docker` sends docker commands to `dockerd` the docker container manager which carries them out.
+
+- `docker` uses docker API
+
+- can communicate with more that one daemon
+
+## Docker Desktop
+
 ## References
 
 1. [official docs](https://docs.docker.com/get-started/docker-overview/#:~:text=The%20underlying%20technology,-Docker%20is%20written&text=Docker%20uses%20a%20technology%20called,provide%20a%20layer%20of%20isolation.)
