@@ -4,6 +4,12 @@
 
 - Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.
 
+## Containers and the Docker platform
+
+Docker is a platform that simplifies the process of creating, deploying, and managing containers. It provides developers and administrators with a set of tools and APIs to manage containerized applications.
+
+With Docker, you can build and package application code, libraries, and dependencies into a **container image**, which can be distributed and run consistently in any environment that supports Docker.
+
 ## What are Containers?
 
 Containers are lightweight, portable, and isolated software environments that allow developers to run and package applications with their dependencies, consistently across different platforms. They help to streamline application development, deployment, and management processes while ensuring that applications run consistently, regardless of the underlying infrastructure.
@@ -17,9 +23,15 @@ Unlike traditional virtualization, which emulates a complete operating system wi
 - **Fast startup**: Since containers don’t need to boot a full OS, they can start up and shut down much faster than VMs.
 - **Consistency**: Containers provide a consistent environment for development, testing, and production stages of an application, reducing the “it works on my machine” problem.
 
-## Containers and Docker
+## Docker Tooling
 
-Docker is a platform that simplifies the process of creating, deploying, and managing containers. It provides developers and administrators with a set of tools and APIs to manage containerized applications. With Docker, you can build and package application code, libraries, and dependencies into a container image, which can be distributed and run consistently in any environment that supports Docker.
+Docker provides tooling and a platform to manage the lifecycle of your containers:
+
+- Develop your application and its supporting components using containers.
+
+- The container becomes the unit for distributing and testing your application.
+
+- When you're ready, deploy your application into your production environment, as a container or an orchestrated service. This works the same whether your production environment is a local data center, a cloud provider, or a hybrid of the two.
 
 ## References
 
