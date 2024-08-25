@@ -63,6 +63,31 @@ Docker provides tooling and a platform to manage the lifecycle of your container
 
 - Includes the Docker daemon (`docker), the Docker client (`docker`), Docker Compose, Docker Content trust, Kubernetes and Credential Helps.
 
+## Docker Registries
+
+- A registry to store Docker images.
+
+- Public Registry: Docker Hub
+
+- You can run your own private registry
+
+- Command used: `docker pull` and `docker run`
+
+## Docker objects
+
+### Images
+
+- An image is a read-only template with instruction for creating a Docker container.
+
+- Often, an image is based on another image, with some additional customization.
+
+- You can create and publish images to a registry
+
+- Creating image is done by **Dockerfile** with simple syntax.
+  - Each instruction in a Dockerfile creates a layer in the image
+  - when changing Dockerfile and rebuilding an image, only those layers which have changed are rebuilt
+  - This is why images are so lightweight, small and fast
+
 ## References
 
 1. [official docs](https://docs.docker.com/get-started/docker-overview/#:~:text=The%20underlying%20technology,-Docker%20is%20written&text=Docker%20uses%20a%20technology%20called,provide%20a%20layer%20of%20isolation.)
